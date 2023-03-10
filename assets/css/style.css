@@ -1,0 +1,340 @@
+:root {
+    --maincolor: rgba(22, 58, 59, 0.658);
+    --bordercolor: rgb(31, 174, 231);
+    --background: rgb(109, 152, 231);;
+    --secondcolor: rgb(6, 41, 61);
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+  body {
+      color: #1c8591;
+      font-family: Calibri, Arial, sans-serif;
+      background-color: rgb(229, 232, 238);
+    }
+  
+  /* apply styles to <header> */
+  header {
+      padding: 25px 35px;
+      background-color: #14bdc9;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+     
+    }
+  
+  header h1 {
+      font-weight: bold;
+      font-size: 65px;
+      line-height: 1.1;
+      color: var(--maincolor);
+      margin: 1px;
+    }
+  
+  header nav {
+      margin: 9px 0;
+    }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    }
+
+    section {
+        padding: 15px;
+    }
+  
+    /* header navigation */
+  header nav ul li a {
+      margin: 0 40px;
+      font-weight: bold;    
+      font-size: 30px;
+      color: var(--maincolor);
+      text-decoration: none;
+      border-bottom: 4px solid;
+      padding-bottom: 4px;
+    }
+
+
+  
+/*background image*/
+.slogan {
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+  }
+  
+  /*Add my photo*/
+.image1 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    border: 3px var(--maincolor) solid;
+    height: 300px;
+    width: 300px;
+  }
+  
+.slogan h2 {
+    position: absolute;
+    right: 100px;
+    font-style: oblique;
+    font-size: 40px;
+    color: var(--maincolor);
+    margin-top: 100px;
+  }
+
+  
+/*Work*/
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 40px;  
+    width: 80%;
+    align-items: center;
+  }
+  
+.flex-row {
+    display: flex;
+    justify-content: left;
+  }
+  
+.titlesection {
+    font-size: 35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #1b4c8b;
+    margin: 5 5 5 90px;
+    width: 50%;
+  }
+  
+.info{
+    flex :2 20%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+.border1 {
+    border-right: 4px var(--bordercolor);
+    height: 200px;
+    flex: 2 2%;
+  }
+  
+.text {
+    flex: 50;
+  }
+  
+.text p {
+    color: var(--maincolor);
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.1;
+    margin-left: 40px;
+    width: 100%;
+  }
+  
+.border2{
+    border-right: 3px var(--bordercolor);
+    height: 450px;
+    flex: 2 7%;  
+  }
+
+  /*apply flex properties to show main project then rest of projects under */
+.main-project { 
+    width: 100%;
+    margin: 10 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.main-project1 { 
+    margin: 5% 10%;
+    background-color: var(--background);
+    color: var(--secondcolor);
+    flex: 5;
+    border: 4px solid var(--bordercolor);
+    border-radius: 15px;
+}
+.main-project1 img { 
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.main-project1 .hidden-text { 
+    font-size: 20px;
+    display: none;
+}
+.main-project1:hover .hidden-text { 
+    display: block;
+}
+
+.projects { 
+    width: 100%;
+    margin: 10 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.project2 { 
+    margin: 20px;
+    background-color: var(--background);
+    color: var(--secondcolor);
+    flex: 5;
+    border: 4px solid var(--bordercolor);
+    border-radius: 15px;
+}
+.project2 img { 
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.projbio { 
+    padding: 30px;
+    line-height: 1.1;
+}
+.projbio h3 { 
+    font-size: 30px;
+}
+.project2 .hidden-text { 
+    font-size: 20px;
+    display: none;
+}
+.project2:hover .hidden-text { 
+    display: block;
+}
+  
+.container {
+    
+    justify-content: center;
+    align-items: center; 
+    margin-left: 50px;
+    width: 80%;
+  }
+  
+
+  /*contact info footer */
+.contacts {
+    flex: 150;
+  }
+  .contacts ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: left;
+    list-style: none;
+    margin-left: 15px;
+    width: 100%;  
+    }
+  
+.contacts ul li a {
+      margin: 0 30px;
+      font-size: 18px;
+      color: var(--maincolor);
+      text-decoration: none;
+      border-bottom: 3px solid;
+      padding-bottom: 2px;
+    }
+
+    
+ /*media queries*/
+
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 15px;
+      justify-content: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+      flex-direction: row;
+      line-height: 1.8;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .slogan {
+      background-size: cover;
+    }
+
+    .image1 {
+      height: 100px;
+      width: 100px;
+    }
+    .slogan h2 {      
+      font-size: 10px;
+      margin-top: 350px;
+      }
+
+    .text p{
+        width: 85%;
+      }
+
+      .contacts ul {     
+        width: 100%;
+        justify-content: left;
+        flex-direction: column;      
+    }
+      
+      .contacts ul li a {
+          font-size: 30px;
+          line-height: 2.5;  
+          font-weight: bold;
+    }
+
+    .titlesection {
+      width: 100%;
+      text-align: right;
+      font-weight: bold;
+    }
+
+    .border1 {      
+      height: 350px;     
+    }border
+
+  .border2{
+    height: 280px;     
+  }  
+
+  .image1 {
+    top:200px;
+    }
+    .container{
+      width: 100%;
+    }
+   
+
+    .border3{
+        height: 180px;
+    }
+
+   
+      
+    
+
+  }
