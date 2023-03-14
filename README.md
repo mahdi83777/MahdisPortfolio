@@ -30,13 +30,13 @@ THEN I am presented with a responsive layout that adapts to my viewport
 Please find an image of the output:
 
 <div>
-    <img src="./assets/images/output1.png" width="400px"/> 
+    <img src="./assets/images/output1.PNG" width="400px"/> 
 </div>
 <div>
-    <img src="./assets/images/output2.png" width="400px"/> 
+    <img src="./assets/images/output2.PNG" width="400px"/> 
 </div>
 <div>
-    <img src="./assets/images/output3.png" width="400px"/> 
+    <img src="./assets/images/output3.PNG" width="400px"/> 
 </div>
 
 # Installation
